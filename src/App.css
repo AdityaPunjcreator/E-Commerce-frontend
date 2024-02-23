@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+#font {
+  font-family: "Pacifico", cursive;
+  color: rgba(199, 239, 22, 0.89);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#font1 {
+  font-family: "Pacifico", cursive;
+  color: rgba(0, 0, 0, 0.797);
+}
+/* changing the appearance of the input in the navbar  */
+.frm-ui {
+  background-color: rgba(255, 255, 255, 0.986);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  width: 20rem;
+  background-clip: border-box;
+  /* padding: 0px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* customizing the search button appearance  */
+.bt-ui {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 15px;
+  background-color: rgba(199, 239, 22, 0.89);
+  border-color: transparent;
+  color: black;
+  font-weight: 500;
+}
+
+.font {
+  color: rgba(199, 239, 22, 0.89);
+}
+.button {
+  background-color: rgba(199, 239, 22, 0.89);
+  color: black;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+/* changing the dimension of the cards using transform property of css when the user hover on the card  */
+.card-slider {
+  transform: scale(1);
+
+  transition: transform, 0.5s;
+}
+
+.card-slider:hover {
+  transform: scale(1.1);
+}
+
+/* applying the media screen to make it responsive  */
+@media screen and (max-width: 500px) {
+  .frm-ui {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .bt-ui {
+    margin-top: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loader-icon {
+  position: relative;
+  top: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 368px) and (max-width: 439px) {
+  .contact {
+    margin-left: 5rem;
   }
 }
