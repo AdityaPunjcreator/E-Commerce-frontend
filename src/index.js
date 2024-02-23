@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"; // importing the React DOM module
 import "bootstrap/dist/css/bootstrap.min.css"; // importing the Bootstrap file
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // importing the Bootstrap jquery file
 import "./index.css"; // importing the css file
-import App from "./app"; // importing the root component
+import App from "./App"; // importing the root component
 import store from "./Redux/store"; // importing the centralized store
 import { Provider } from "react-redux";
 
