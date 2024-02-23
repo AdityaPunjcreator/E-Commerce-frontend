@@ -8,7 +8,7 @@ import Login from "./pages/login"; // importing the Login component"
 import Signup from "./pages/signup"; // importing the Signup component
 import Products from "./components/allProducts"; // importing the Products component
 import Cart from "./components/cart"; // importing the Cart component
-import "./app.css"; // importing the css file
+import "./App.css"; // importing the css file
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // importing these components to enable navigation to components in the browser
 import { useDispatch } from "react-redux"; // import useDispatch from  react-redux library
 import { loginFailure, loginSuccess } from "./Redux/Action/userAction"; // import loginSuccess, loginFailure
